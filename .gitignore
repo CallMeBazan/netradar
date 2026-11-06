@@ -1,0 +1,11 @@
+build/
+cmake-build-*/
+netradar
+run_tests
+demo_screen
+*.o
+*.out
+*.zip
+.vscode/
+.clangd
+.DS_Store
