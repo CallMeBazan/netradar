@@ -5,12 +5,12 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# Flagi optymalizacji i ostrzeżeń kompilatora
+
 add_compile_options(-Wall -Wextra -O2)
 
 include_directories(include)
 
-# Główny plik wykonywalny: netradar
+
 add_executable(netradar
     src/main.cpp
     src/HostStats.cpp
@@ -20,7 +20,7 @@ add_executable(netradar
     src/DashboardTUI.cpp
 )
 
-# Plik wykonywalny testów jednostkowych: run_tests
+
 add_executable(run_tests
     tests/test_stats.cpp
     src/HostStats.cpp
