@@ -44,6 +44,20 @@
 
 ---
 
+## 💡 Methodology (Vibe Coding, Done Right)
+
+This project was built using a *vibe coding* approach, but in a right way:
+
+1. **Planning:** Defining low-level architecture, requirements, and POSIX socket constraints.
+2. **Consulting:** Reviewing design choices, concurrency patterns, and data structures.
+3. **Implementation:** Writing clean modular code and system-level components.
+4. **Manual Verification:** Inspecting logic, thread-safety, and resource handling.
+5. **Refinement:** Addressing edge cases, network nuances, and performance bottlenecks.
+6. **Testing:** Writing and running dedicated unit tests for network math and parsing.
+7. **Code Review:** Proposing optimizations, security practices, and clean-ups.
+8. **Final Approval:** Inspecting and accepting the production-ready code.
+---
+
 ## 🏗️ Modular Architecture
 
     netradar/
@@ -93,12 +107,3 @@
 
     clang++ -std=c++17 -Iinclude src/HostStats.cpp src/NetworkProber.cpp src/MacVendor.cpp tests/test_stats.cpp -o run_tests
     ./run_tests
-
----
-
-## 🗺️ Roadmap
-
-- [ ] Export session audit results to Markdown / JSON / CSV (`--export`)
-- [ ] Layer 2 anomaly alerts (duplicate MAC / ARP spoofing detection)
-- [ ] Custom fixed-size `ThreadPool` replacing `std::async`
-- [ ] Passive discovery listener (`libpcap`) for CDP / LLDP / MNDP frames
